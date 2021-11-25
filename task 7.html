@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
+ 
 <html lang="en">
-
+ 
 <head>
     <meta charset="utf-8" />
     <title>Task 7</title>
@@ -9,7 +9,7 @@
         input {
             display: block;
         }
-
+ 
         #figures {
             margin-top: 8px;
         }
@@ -29,11 +29,11 @@
         .square, .circle {
             border: 1px solid black;
         }
-
+ 
         .square {
             background: rgba(255, 0, 0, 0.8);
         }
-
+ 
         .circle {
             border-radius: 50%;
             background: rgba(0, 255, 0, 0.8);
@@ -48,7 +48,7 @@
     <div id="figures"></div>
 </body>
 </html>
-
+ 
 <script>
     const max_wight = 1200;
     const max_height = 700;
@@ -79,11 +79,11 @@
                 new_figure.style.width = size + 'px';
                 new_figure.style.height = size + 'px';
             }
-
+ 
             figures.appendChild(new_figure);
         }
     }
-
+ 
     figures.addEventListener('click', function (e) {
         if (e.target.classList.contains('square')) {
             e.target.classList.add('target-square');
